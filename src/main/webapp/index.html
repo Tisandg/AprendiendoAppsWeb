@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="user.js"></script>
+        <link rel="StyleSheet" type="text/css" href="estilo.css" >
+    </head>
+    
+    <body>
+        <div class="flex-container">
+            <header>
+                <h1>HelloWorld!</h1><br>
+            </header>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../exampleClient"><h3>Usuarios</h3></a></li>
+                    <li><a href="Estadisticas.html"><h3>Estadisticas</h3></a></li>
+                </ul>
+            </nav>
+            
+            <section class="section">
+                <h2><strong>Usuarios</strong></h2>
+                <h3>Busqueda usuario</h3>
+                    <h4>Id del usuario:</h4>
+                    <input type="text" id="idUsuarioBuscar" placeholder="Ej: 145">
+                    <button type="button" id="buttonFindUser" >Buscar Usuario</button>
+                    <button type="button" id="buttonFindUsers">Listar Usuarios</button>
+                    <br>
+                <hr>
+                
+                <button type="button" id="buttonAdd" >Agregar Usuario</button>
+                <button type="button" id="buttonUpd" >Actualizar Usuario</button>
+                <button type="button" id="buttonDel" >Eliminar Usuario</button>
+                <button type="button" id="buttonEstadisticas" >Estadisticas</button>
+                
+                <!-- Division donde aparece los usuarios-->
+                <div id="table_div"></div>
+                
+                <div id="bgventana">
+                    <div id="ventana">
+                        <form name="formInput" id="formulario">
+                            <h4>Id*:</h4>
+                            <input type="text" id="idUserInput" placeholder="Ej: 145"><div id='menssageValidationId'></div>
+                            <h4>Nombre*:</h4>
+                            <input type="text" id="nameUserInput" placeholder="Ej: Santiago Garcia"><div id='menssageValidationName'></div>
+                            <h4>Email:</h4>
+                            <input type="text" id="emailUserInput" placeholder="Ej: santiago@gmail.com"><div id='menssageValidationEmail'></div>
+                            <h4>Rol*:</h4>
+                            <select name="transporte" id="selectRol"></select>
+                            <div id='menssageValidationRol'></div>
+                            <p>Nota: Los campos marcador con * son obligatorios<p>
+                        </form>
+                            <button type="button" id="buttonAddUser" >Agregar</button>
+                            <button type="button" id="buttonCancelar" >Cancelar</button>
+                            <button type="button" id="buttonLimpiar" >limpiar</button>
+     
+                    </div>
+                </div>                
+            </section>
+            <footer>Copyright &copy; W3Schools.com</footer>
+        </div>
+    </body>
+</html>

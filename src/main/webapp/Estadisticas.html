@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estadisticas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="user.js"></script>
+        <link rel="StyleSheet" type="text/css" href="estilo.css" >
+    </head>
+    
+    <body>
+        <div class="flex-container">
+            <header>
+                <h1>HelloWorld!</h1><br>
+            </header>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../exampleClient"><h3>Usuarios</h3></a></li>
+                    <li><a href="Estadisticas.html"><h3>Estadisticas</h3></a></li>
+                </ul>
+            </nav>
+
+            <section class="section">
+                <h2>Estadisticas</h2>
+                <h4>Por favor, seleccione un tipo de grafico</h4>
+                <button type="button" value="1" id="buttonPie" >Pie Chart</button>
+                <button type="button" value="2" id="buttonColumnas" >Column Chart</button>
+                <button type="button" value="3" id="buttonDona" >Donut Chart</button>
+                <button type="button" value="4" id="buttonArea" >Area Chart</button>
+                <br><br>
+                <div id="chart_div"></div>
+                
+            </section>
+            <footer>Copyright &copy; W3Schools.com</footer>
+        </div>
+    </body>
+</html>
+
